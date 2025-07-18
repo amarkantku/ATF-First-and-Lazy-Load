@@ -1,12 +1,23 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => (
-  <header className="site-header">
-    <div className="container">
-      <h1 className="logo">Hotowork.com</h1>
-      <nav className="nav"></nav>
-    </div>
-  </header>
-);
+const Header: React.FC = () => {
+  return (
+    <header className="site-header">
+      <div className="container">
+        <Link to="/" className="logo">
+          Hotowork.com
+        </Link>
+        <nav className="nav">
+          <Link to="/about">About</Link>
+          <Link to="/join" className="join-link">
+            Join Us 🚀
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
 export default Header;
