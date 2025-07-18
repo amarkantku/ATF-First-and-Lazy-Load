@@ -9,7 +9,7 @@ const Footer = () => (
       alignItems: "center",
     }}
   >
-    © 2025 MySite. All rights reserved.
+    © 2025 Hotowork.com. All rights reserved.
   </footer>
 );
 
