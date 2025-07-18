@@ -15,7 +15,6 @@ const LazySection: React.FC<LazySectionProps> = ({ load, fallback = null }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       async ([entry]) => {
-        console.log("@test ", entry);
         if (entry.isIntersecting && !Component) {
           const LazyComp = React.lazy(load);
           setComponent(() => LazyComp);
